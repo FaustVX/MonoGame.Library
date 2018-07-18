@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <LangVersion>7.2</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>FaustVX</Authors>
+    <Company>FaustVXFaustVX</Company>
+    <PackageProjectUrl>https://github.com/FaustVX/MonoGame.Library</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/FaustVX/MonoGame.Library/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>monogame csharp dotnet standard</PackageTags>
+    <Description>A Library for easing the use of MonoGame</Description>
+  </PropertyGroup>
+
+  <!--ItemGroup>
+    <Content Include="OpenTK.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup-->
+
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Android\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <!--ItemGroup Condition="'$(TargetFramework)' == 'net47'">
+    <Reference Include="OpenTK">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup-->
+
+</Project>
