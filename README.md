@@ -4,7 +4,7 @@ A Library for easing the use of MonoGame
 ## How to use
 
 ``` csharp
-using MonoGame.Library
+using MonoGame.Library;
 using MonoGame.Library.Components;
 using XNA = Microsoft.Xna.Framework;
 
@@ -33,6 +33,7 @@ class Game1 : Game<MyGameInputs>
         /*
         Add all of you componnents with Components.Add
         for your components, use MonoGame.Library.Components base classes
+        Also, you can use MonoGame.Library.Components.AssetLoader<T> as component for loading Asset (such as Texture2D, SpriteFont, ...), they will automatically load the ressource.
         */
     }
 
